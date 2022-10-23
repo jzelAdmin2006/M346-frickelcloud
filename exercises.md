@@ -9,7 +9,7 @@ Sie hierzu die `// TODO: `-Kommentare im Code und die folgenden Instruktionen:
 
 ## Aufgabe 0) Mit dem Code vertraut machen
 
-siehe `ex0/questions.md`
+siehe `ex0.md`
 
 Öffnen Sie die Datei `frickelbude.go`. Und betrachten Sie den Code. Die Datei enthält folgende Definitionen:
 
@@ -32,3 +32,23 @@ Beantworten Sie die folgenden Fragen um Ihr Verständnis für diese Definitionen
 3. Über wie viel unzugeordneten SSD-Speicherplatz verfügt der Host `big-1`?
 
 Schreiben Sie Ihre Antworten in die Datei `ex0/questions.md`.
+
+## Aufgabe 1) Freie Ressourcen pro Host berechnen
+
+siehe `ex1.go` und `ex1/main.go`
+
+Diese Aufgabe bezieht sich auf den ersten Prozess (_VM-Provisionierung: Automatisches Einpassen in Hardware_) im [README](README.md#1-vm-provisionierung-automatisches-einpassen-in-hardware).
+
+Zuerst muss man herausfinden können, wie viele freie Ressourcen auf einem Host noch zur Verfügung stehen.
+
+Vervollständigen Sie in `ex1.go` die Methode `AvailableRessources` folgendermassen:
+
+1. Iterieren Sie über alle Gäste des Hosts (`h.Guests`).
+2. Summieren Sie die Anzahl der CPUs, die Arbeitsspeichermenge (RAM) und die Grösse des Speichers (SSD) über alle Gäste auf.
+3. Subtrahieren Sie diese Summen von der Hardware-Spezifikation des Hosts (`h.Hardware`) und geben Sie eine neue `Server`-Struktur zurück, welche diese Differenz (= freie Ressourcen) enthält.
+
+In `ex1/main.go` wird die Methode bereits für alle Hosts aufgerufen. Testen Sie Ihre Implementierung, indem Sie dieses Programm ausführen:
+
+```bash
+go run ex1/main.go
+```
