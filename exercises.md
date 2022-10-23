@@ -65,3 +65,41 @@ Testen Sie Ihre Implementierungen, indem Sie dieses Programm ausführen:
 ```bash
 go run ex1/main.go
 ```
+
+## Aufgabe 2) VM in passendes Host-Inventar aufnehmen
+
+siehe `ex2.go` und `ex2/main.go`
+
+Diese Aufgabe bezieht sich ebenfalls auf den ersten Prozess (_VM-Provisionierung: Automatisches Einpassen in Hardware_) im [README](README.md#1-vm-provisionierung-automatisches-einpassen-in-hardware).
+
+Mithilfe der Methode `Host.CanFitIn` kann man prüfen, ob eine virtuelle Maschine auf dem jeweiligen Host untergebracht werden kann. Im zweiten Teil geht es darum, die VM tatsächlich auf einem passenden Host unterzubringen.
+
+### a) Hosts mit genügend Ressourcen ermitteln
+
+Vervollständigen Sie in `ex2.go` die Methode `FindFittingHosts` folgendermassen:
+
+1. Iterieren Sie über das `HostInventory`.
+    - Bei jedem Schleifendurchlauf erhalten Sie einen Namen und einen `Host`.
+2. Prüfen Sie für jeden Host, ob er die gegebene VM aufnehmen kann.
+3. Fügen Sie die Hosts mit genügend freien Ressourcen einer Map hinzu, welche Sie anschliessend zurückgeben.
+    - Als Key dient der Name des Hosts, als Value der `Host` selber.
+
+### b) VM auf Host unterbringen
+
+Vervollständigen Sie in `ex2.go` die Methode `FitIn` folgendermassen:
+
+1. Überprüfen Sie noch einmal, ob der Host `h` wirklich genügend Platz für die `vm` hat.
+    - Geben Sie einen entsprechenden Fehler zurück, falls die verfügbaren Ressourcen zu gering sind.
+2. Überprüfen Sie, ob der Host `h` nicht schon eine Gast-VM mit dem gewünschten `name` der neuen VM hat (siehe `h.Guests`).
+    - Geben Sie einen Fehler zurück, falls der Name schon vergeben ist.
+3. Fügen Sie die `vm` schliesslich dem Inventar des Hosts hinzu (d.h. der Map `h.Guests`).
+
+### c) Programm testen
+
+In `ex2/main.go` wird die Methode `FindFittingHosts` für verschiedene VMs aufgerufen. Anschliessend wird für die jeweiligen passenden Hosts die Methode `FitIn` aufgerufen, um die VM ins Inventar aufzunehmen.
+
+Testen Sie Ihre Implementierungen, indem Sie dieses Programm ausführen:
+
+```bash
+go run ex2/main.go
+```
