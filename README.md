@@ -17,9 +17,11 @@ Diese Repetitionsaufgaben behandeln die Inhalte der bisherigen vier Go-Blöcke (
 
 ## Fallbeispiel: Frickelcloud
 
-Die Firma Frickelcloud ist ein neuer, innovativer Player im hart umkämpften IaaS-Cloud-Hyperscaler-Markt. (Auf Deutsch: Bei der Frickelcloud kann man virtuelle Maschinen mieten.)
+![FrickelCloud-Logo](assets/frickelcloud.png)
 
-Beim Bestellen einer solchen VM müssen folgende Angaben gemacht werden (die Optionen mit den monatlichen Preisen dazu sind aufgelistet):
+Die Firma Frickelcloud ist ein innovativer, neuer Player im hart umkämpften IaaS-Cloud-Hyperscaler-Markt. (Auf Deutsch: Bei der Frickelcloud kann man virtuelle Maschinen mieten.)
+
+Beim Bestellen einer solchen VM muss der Kunde folgende Angaben machen (die Optionen mit den monatlichen Preisen dazu sind aufgelistet):
 
 1. Prozessoren (CPU): gewünschte Cores (Anzahl)
     - 1 (1 CHF)
