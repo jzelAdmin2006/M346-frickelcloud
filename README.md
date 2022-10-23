@@ -76,6 +76,8 @@ Die von den Kunden bestellten VMs werden auf die physischen Server verteilt. Wen
 
 (Dass der physische Server ebenfalls Ressourcen zur Ausführung benötigt, kann hier ignoriert werden. Es stehen alle Ressourcen für die VMs zur Verfügung.)
 
+Umsetzung: siehe [Aufgabe 1](exercises.md#aufgabe-1-freie-ressourcen-pro-host-berechnen) und [Aufgabe 2](exercises.md#aufgabe-2-vm-in-passendes-host-inventar-aufnehmen) und
+
 ### 2) VM-Ausserbetriebnahme: Automatische Freigabe der Hardware-Ressourcen
 
 Ein Kunde kann auch eine bestehende VM wieder entfernen lassen. Dieser Vorgang soll ebenfalls voll automatisch erfolgen:
@@ -85,6 +87,8 @@ Ein Kunde kann auch eine bestehende VM wieder entfernen lassen. Dieser Vorgang s
 2. Die gefundene VM soll vom physischen Server entfernt werden.
     - Dadurch sinkt die Ressourcenauslastung auf dem betreffenden Server.
 
+Umsetzung: siehe [Aufgabe 3](exercises.md#aufgabe-3-vm-aus-dem-inventar-entfernen)
+
 ### 3) VM-Abrechnung: Umsatzberechnung
 
 Die FrickelCloud hat zwar noch keine Buchhaltungsabteilung und erwirtschaftet als Startup auch noch keinen Gewinn. Trotzdem möchte man schon einmal abschätzen können, wie viel Umsatz man mit der aktuellen Auslastung erwirtschaften würde. (Da man bereits Anschaffungs- und Betriebskosten hat, kann man das Preismodell mithilfe der Umsatzberechnung evtl. etwas optimieren.) Die Umsatzberechnung funktioniert folgendermassen:
@@ -93,3 +97,5 @@ Die FrickelCloud hat zwar noch keine Buchhaltungsabteilung und erwirtschaftet al
     - VM-Preis = CPU-Kosten + RAM-Kosten + SSD-Kosten
 2. Die Preise der einzelnen laufenden VMs auf allen physischen Servern können aufsummiert werden.
     - Gesamtumsatz = Summe aller VM-Preise
+
+Umsetzung: siehe [Aufgabe 4](exercises.md#aufgabe-4-umsatz-berechnen)
