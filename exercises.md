@@ -140,3 +140,35 @@ Testen Sie Ihre Implementierungen, indem Sie dieses Programm ausführen:
 ```bash
 go run ex3/main.go
 ```
+
+## Aufgabe 4) Umsatz berechnen
+
+siehe `ex4.go` und `ex4/main.go`
+
+Diese Aufgabe bezieht sich auf den dritten Prozess (_VM-Abrechnung: Umsatzberechnung_) im [README](README#3-vm-abrechnung-umsatzberechnung).
+
+### a) Den Umsatz pro VM berechnen
+
+Vervollständigen Sie in `ex4.go` die Methode `CalculateRevenue` folgendermassen:
+
+1. Ermitteln Sie die Kosten für die einzelnen VM-Komponenten (CPU, RAM, SSD) anhand der Maps `PricingCPU`, `PricingRAM` bzw. `PricingSSD`.
+2. Geben Sie die Summe der Werte zurück.
+
+### b) Den Umsatz aller VMs berechnen
+
+Vervollständigen Sie in `ex4.go` die Methode `CalculateTotalRevenue` folgendermassen:
+
+1. Iterieren Sie über die einzelnen Hosts des Inventars.
+2. Iterieren Sie über die Guest-VMs jedes Hosts.
+3. Berechnen Sie den Umsatz pro VM mithilfe der zuvor implementierten Methode `CalculateRevenue`.
+4. Geben Sie die Summe als Gesamtumsatz zurück.
+
+### c) Programm testen
+
+In `ex4/main.go` wird der Umsatz einiger neuen VMs berechnet und ausgegeben. Weiter wird der Gesamtumsatz der FrickelCloud berechnet und ausgegeben.
+
+Testen Sie Ihre Implementierungen, indem Sie dieses Programm ausführen:
+
+```bash
+go run ex4/main.go
+```
