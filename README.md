@@ -15,11 +15,11 @@ Diese Repetitionsaufgaben behandeln die Inhalte der bisherigen vier Go-Blöcke (
     - [Git-Repository](https://code.frickelbude.ch/m346/go-4-functions)
     - [YouTube-Playlist](https://www.youtube.com/watch?v=gvn9H363zQU&list=PLoID6wkkuS3f0PTinsKMjZVzOMfVBV2Dc)
 
-## Fallbeispiel: Frickelcloud
+## Fallbeispiel: FrickelCloud
 
 ![FrickelCloud-Logo](assets/frickelcloud.png)
 
-Die Firma Frickelcloud ist ein innovativer, neuer Player im hart umkämpften IaaS-Cloud-Hyperscaler-Markt. (Auf Deutsch: Bei der Frickelcloud kann man virtuelle Maschinen mieten.)
+Die Firma FrickelCloud ist ein innovativer, neuer Player im hart umkämpften IaaS-Cloud-Hyperscaler-Markt. (Auf Deutsch: Bei der FrickelCloud kann man virtuelle Maschinen mieten.)
 
 Beim Bestellen einer solchen VM muss der Kunde folgende Angaben machen (die Optionen mit den monatlichen Preisen dazu sind aufgelistet):
 
@@ -46,7 +46,7 @@ Beim Bestellen einer solchen VM muss der Kunde folgende Angaben machen (die Opti
     - 500 (6 CHF)
     - 1000 (8 CHF)
 
-Die Frickelcloud verfügt über mehrere physische Server mit den folgenden Spezifikationen:
+Die FrickelCloud verfügt über physische Server mit den folgenden Spezifikationen:
 
 - _Small_
     - CPU: 4 Cores
@@ -87,7 +87,7 @@ Ein Kunde kann auch eine bestehende VM wieder entfernen lassen. Dieser Vorgang s
 
 ### VM-Abrechnung: Umsatzberechnung
 
-Die Frickelcloud hat zwar noch keine Buchhaltungsabteilung und erwirtschaftet als Startup auch noch keinen Gewinn. Trotzdem möchte man schon einmal abschätzen können, wie viel Umsatz man mit der aktuellen Auslastung erwirtschaften würde. (Da man bereits Anschaffungs- und Betriebskosten hat, kann man das Preismodell mithilfe der Umsatzberechnung evtl. etwas optimieren.) Die Umsatzberechnung funktioniert folgendermassen:
+Die FrickelCloud hat zwar noch keine Buchhaltungsabteilung und erwirtschaftet als Startup auch noch keinen Gewinn. Trotzdem möchte man schon einmal abschätzen können, wie viel Umsatz man mit der aktuellen Auslastung erwirtschaften würde. (Da man bereits Anschaffungs- und Betriebskosten hat, kann man das Preismodell mithilfe der Umsatzberechnung evtl. etwas optimieren.) Die Umsatzberechnung funktioniert folgendermassen:
 
 1. Pro VM kann der Preis anhand der Preisangaben pro CPU, RAM und SSD berechnet werden.
     - VM-Preis = CPU-Kosten + RAM-Kosten + SSD-Kosten
