@@ -7,7 +7,9 @@
 Die folgenden Aufgaben können Sie direkt in die angegebene Datei lösen. Beachten
 Sie hierzu die `// TODO: `-Kommentare im Code und die folgenden Instruktionen:
 
-## 0) Mit dem Code vertraut machen
+## Aufgabe 0) Mit dem Code vertraut machen
+
+siehe `ex0/questions.md`
 
 Öffnen Sie die Datei `frickelbude.go`. Und betrachten Sie den Code. Die Datei enthält folgende Definitionen:
 
