@@ -64,7 +64,7 @@ var DataCenter = HostInventory{
 				RAM: 1024,
 				SSD: 240,
 			},
-			"files-erver": Server{
+			"file-server": Server{
 				CPU: 1,
 				RAM: 1024,
 				SSD: 80,

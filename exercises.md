@@ -103,3 +103,40 @@ Testen Sie Ihre Implementierungen, indem Sie dieses Programm ausführen:
 ```bash
 go run ex2/main.go
 ```
+
+## Aufgabe 3) VM aus dem Inventar entfernen
+
+siehe `ex3.go` und `ex3/main.go`
+
+Diese Aufgabe bezieht sich auf den zweiten Prozess (_VM-Ausserbetriebnahme: Automatische Freigabe der Hardware-Ressourcen_) im [README](README.md#2-vm-ausserbetriebnahme-automatische-freigabe-der-hardware-ressourcen).
+
+### a) Die VM auf dem Inventar finden
+
+Der Kunde braucht nicht zu wissen, auf welchem Host seine VM als Gast läuft. Will der Kunde eine VM entfernen, muss der Anbieter jedoch wissen, auf welchem Host sie sich befindet.
+
+Vervollständigen Sie in `ex3.go` die Methode `FindHost` folgendermassen:
+
+1. Iterieren Sie über das gegebene `HostInventory`.
+    - Bei jeder Iteration erhalten Sie den Namen des Hosts und den Host selber.
+2. Prüfen Sie für jeden Host, ob er in seinem Gäste-Inventar (`Guests`) eine VM mit dem gegebenen Namen `vmName` enthält.
+3. Geben Sie den Namen des gefundenen Hosts zurück.
+4. Kann der `vmName` auf keinem Host-Inventar gefunden werden, geben Sie einen leeren String und eine entsprechende Fehlermeldung zurück.
+
+### b) Die VM aus dem Inventar entfernen
+
+Vervollständigen Sie in `ex3.go` die Methode `Remove` folgendermassen:
+
+1. Prüfen Sie noch einmal, ob die VM mit dem Namen `vmName` wirklich auf dem Inventar existiert, indem Sie die vorher vervollständigte `FindHost`-Methode aufrufen.
+2. Geben Sie einen Fehler zurück, falls die VM nicht gefunden werden kann.
+3. Greifen Sie mit dem gefundenen Hostname auf den Host im Inventar zu.
+4. Löschen Sie die VM mit dem Namen `vmName` vom Gäste-Inventar des Hosts. (Tipp: Verwenden Sie hierzu die eingebaute [`delete`](https://pkg.go.dev/builtin#delete)-Funktion)
+
+### c) Programm testen
+
+In `ex3/main.go` werden bestehende VMs mithilfe der `Remove`-Methode aus dem Inventar entfernt.
+
+Testen Sie Ihre Implementierungen, indem Sie dieses Programm ausführen:
+
+```bash
+go run ex3/main.go
+```
