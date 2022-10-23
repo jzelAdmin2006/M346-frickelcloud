@@ -76,7 +76,7 @@ Die von den Kunden bestellten VMs werden auf die physischen Server verteilt. Wen
 
 (Dass der physische Server ebenfalls Ressourcen zur Ausführung benötigt, kann hier ignoriert werden. Es stehen alle Ressourcen für die VMs zur Verfügung.)
 
-Umsetzung: siehe [Aufgabe 1](exercises.md#aufgabe-1-freie-ressourcen-pro-host-berechnen) und [Aufgabe 2](exercises.md#aufgabe-2-vm-in-passendes-host-inventar-aufnehmen) und
+Umsetzung: siehe [Aufgabe 1](exercises.md#aufgabe-1-freie-ressourcen-pro-host-berechnen) und [Aufgabe 2](exercises.md#aufgabe-2-vm-in-passendes-host-inventar-aufnehmen)
 
 ### 2) VM-Ausserbetriebnahme: Automatische Freigabe der Hardware-Ressourcen
 
