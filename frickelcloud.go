@@ -38,21 +38,21 @@ type Server struct {
 	SSD uint16
 }
 
+// GuestInventory maps names to virtual machines.
+type GuestInventory map[string]Server
+
 // Host is a physical server running multiple named guests.
 type Host struct {
 	Hardware Server
-	Guests   map[string]Server
+	Guests   GuestInventory
 }
 
 // HostInventory maps names to physical host machines.
 type HostInventory map[string]Host
 
-// GuestInventory maps names to virtual machines.
-type GuestInventory map[string]Server
-
 // DataCenter is the initial hardware configuration and VM allocation.
 var DataCenter = HostInventory{
-	"small_1": Host{
+	"small-1": Host{
 		Hardware: Server{
 			CPU: 4,
 			RAM: 32768,
@@ -71,7 +71,7 @@ var DataCenter = HostInventory{
 			},
 		},
 	},
-	"medium_1": Host{
+	"medium-1": Host{
 		Hardware: Server{
 			CPU: 8,
 			RAM: 65536,
@@ -95,7 +95,7 @@ var DataCenter = HostInventory{
 			},
 		},
 	},
-	"big_1": Host{
+	"big-1": Host{
 		Hardware: Server{
 			CPU: 16,
 			RAM: 131072,
