@@ -35,8 +35,8 @@ Beim Bestellen einer solchen VM muss der Kunde folgende Angaben machen (die Opti
     - 2048 (4 CHF)
     - 4096 (8 CHF)
     - 8192 (16 CHF)
-    - 16384 (32 CHF)
-    - 32768 (64 CHF)
+    - 16'384 (32 CHF)
+    - 32'768 (64 CHF)
 3. Speicherplatz (SSD): gewünschte Grösse (GB)
     - 10 (1 CHF)
     - 20 (2 CHF)
@@ -51,14 +51,14 @@ Die FrickelCloud verfügt über physische Server mit den folgenden Spezifikation
 - _Small_
     - CPU: 4 Cores
     - RAM: 32768 MB (~ 32 GB)
-    - SSD: 4'000 GB (= 4 TB)
+    - SSD: 4000 GB (= 4 TB)
 - _Medium_
     - CPU: 8 Cores
-    - RAM: 65536 MB (~ 64 GB)
-    - SSD: 8'000 GB (= 8 TB)
+    - RAM: 65'536 MB (~ 64 GB)
+    - SSD: 8000 GB (= 8 TB)
 - _Big_
     - CPU: 16 Cores
-    - RAM: 131072 MB (~ 128 GB)
+    - RAM: 131'072 MB (~ 128 GB)
     - SSD: 16'000 GB (= 16 TB)
 
 Auf Basis von diesem Setup sollen folgende drei Prozesse unterstützt werden:
