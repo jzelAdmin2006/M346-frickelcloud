@@ -41,13 +41,26 @@ Diese Aufgabe bezieht sich auf den ersten Prozess (_VM-Provisionierung: Automati
 
 Zuerst muss man herausfinden können, wie viele freie Ressourcen auf einem Host noch zur Verfügung stehen.
 
+### a) Verfügbare Ressourcen ermitteln
+
 Vervollständigen Sie in `ex1.go` die Methode `AvailableRessources` folgendermassen:
 
 1. Iterieren Sie über alle Gäste des Hosts (`h.Guests`).
 2. Summieren Sie die Anzahl der CPUs, die Arbeitsspeichermenge (RAM) und die Grösse des Speichers (SSD) über alle Gäste auf.
 3. Subtrahieren Sie diese Summen von der Hardware-Spezifikation des Hosts (`h.Hardware`) und geben Sie eine neue `Server`-Struktur zurück, welche diese Differenz (= freie Ressourcen) enthält.
 
-In `ex1/main.go` wird die Methode bereits für alle Hosts aufgerufen. Testen Sie Ihre Implementierung, indem Sie dieses Programm ausführen:
+### b) Prüfen, ob Host eine VM aufnehmen kann
+
+Vervollständigen Sie in `ex1.go` die Methode `CanFitIn` folgendermassen:
+
+1. Rufen Sie die soeben vervollständigte Methode `AvailableRessources` auf dem gegebenen Host (`h`) auf.
+2. Prüfen Sie, ob die ermittelten verfügbaren Ressourcen (CPU, RAM, SSD) _alle_ von der gegebenen virtuellen Mashine (`vm`) benötigten Ressourcen übersteigen oder zumindest gleich gross sind und geben Sie einen entsprechenden `bool`-Wert (`true` oder `false`) zurück.
+
+### c) Programm testen
+
+In `ex1/main.go` wird die Methode `AvailableRessources` bereits für alle Hosts aufgerufen. Weiter wird für drei unterschiedliche VMs mithilfe der `CanFitIn`-Methode geprüft, ob Sie von den einzelnen Hosts aufgenommen werden könnte.
+
+Testen Sie Ihre Implementierungen, indem Sie dieses Programm ausführen:
 
 ```bash
 go run ex1/main.go
