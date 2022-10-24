@@ -12,6 +12,6 @@ func (h Host) AvailableRessources() Server {
 // given vm, and false otherwise.
 func (h Host) CanFitIn(vm Server) bool {
 	// TODO: call AvailableRessources on the host
-	// TODO: check that all the hosts's available ressources are larger than the given vm
+	// TODO: check that all the host's available ressources are larger than the given vm
 	return false
 }
