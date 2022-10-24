@@ -31,7 +31,7 @@ Beantworten Sie die folgenden Fragen um Ihr Verständnis für diese Definitionen
 2. Wie viele CPU-Kerne beanspruchen die Gast-VMs auf dem Host `medium-1`? 
 3. Über wie viel unzugeordneten SSD-Speicherplatz verfügt der Host `big-1`?
 
-Schreiben Sie Ihre Antworten in die Datei `ex0/questions.md`.
+Schreiben Sie Ihre Antworten in die Datei `ex0.md`.
 
 ## Aufgabe 1) Freie Ressourcen pro Host berechnen
 
